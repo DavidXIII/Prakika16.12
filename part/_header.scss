@@ -1,0 +1,9 @@
+.header{
+    @extend %section;
+    padding:50px auto;
+    background-image: url(/app/icons/mountain.jpg);
+
+    .container{
+        
+    }
+}
