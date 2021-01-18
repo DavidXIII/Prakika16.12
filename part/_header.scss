@@ -1,9 +1,62 @@
-.header{
+.header {
     @extend %section;
-    padding:50px auto;
-    background-image: url(/app/icons/mountain.jpg);
+    padding: 50px auto;
+    background-image: url(/app/images/mountain.jpg);
+    min-height: 900px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: $white_color;
 
-    .container{
-        
+    .container {}
+
+    &__top,
+    .menu__items {
+        @extend %flexible;
+        justify-content: space-between;
+    }
+
+    a {
+        padding: 20px;
+        text-transform: capitalize;
+
+    }
+
+    &__tittle {
+        @extend %flexible;
+        flex-direction: column;
+        margin: 300px 230px;
+
+        .container {
+            text-align: center;
+        }
+
+        h2, p {
+            padding-bottom: 30px;
+        }
+
+        .tittle__items{
+            display: flex;
+            justify-content: center;
+            
+        }
+        li{
+            width: 180px;
+        }
+        .a{
+            display: block;
+        }
+
+        .item-white{
+            background-color:$white_color;
+            margin-right: 30px;
+            @include item;
+            color:$grey_color;
+            
+        }
+
+        .item-blue{
+            background-color: $blue_color;
+            @include item;
+        }
     }
 }

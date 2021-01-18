@@ -4,6 +4,11 @@
   min-height: 512px;
   padding: 80px 0px; }
 
+.header__top,
+.header .menu__items, .header__tittle {
+  display: flex;
+  flex-direction: row; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +18,15 @@ html, body {
   height: 100%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
 
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 1.5em; }
 
@@ -26,6 +37,40 @@ body {
 
 .header {
   padding: 50px auto;
-  background-image: url(/app/icons/mountain.jpg); }
+  background-image: url(/app/images/mountain.jpg);
+  min-height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff; }
+  .header__top,
+  .header .menu__items {
+    justify-content: space-between; }
+  .header a {
+    padding: 20px;
+    text-transform: capitalize; }
+  .header__tittle {
+    flex-direction: column;
+    margin: 300px 230px; }
+    .header__tittle .container {
+      text-align: center; }
+    .header__tittle h2, .header__tittle p {
+      padding-bottom: 30px; }
+    .header__tittle .tittle__items {
+      display: flex;
+      justify-content: center; }
+    .header__tittle li {
+      width: 180px; }
+    .header__tittle .a {
+      display: block; }
+    .header__tittle .item-white {
+      background-color: #fff;
+      margin-right: 30px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: #929496; }
+    .header__tittle .item-blue {
+      background-color: #70CBCE;
+      border-radius: 4px;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

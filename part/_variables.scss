@@ -10,3 +10,14 @@ $font_text: "Montserrat", sans-serif;
     min-height: 512px;
     padding: 80px 0px;
 }
+
+%flexible{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin item{
+    border-radius: 4px;
+    text-transform: uppercase;
+    
+}
