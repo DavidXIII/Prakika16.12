@@ -6,6 +6,8 @@ $black_color:#000000;
 
 $font_text: "Montserrat", sans-serif;
 
+$font_h2: "Montserrat", sans-serif;
+
 %section{
     min-height: 512px;
     padding: 80px 0px;
@@ -19,5 +21,18 @@ $font_text: "Montserrat", sans-serif;
 @mixin item{
     border-radius: 4px;
     text-transform: uppercase;
-    
+}
+
+@mixin bg{
+    padding: 50px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white_color;
+    display: flex;
+}
+
+@mixin border{
+    border-top: solid 4px;
 }

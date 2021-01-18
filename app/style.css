@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,400&family=Raleway&display=swap");
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&display=swap");
+.tittle, .firstscreen {
   min-height: 512px;
   padding: 80px 0px; }
 
 .header__top,
-.header .menu__items, .header__tittle {
+.header .menu__items, .tittle .container {
   display: flex;
   flex-direction: row; }
 
@@ -31,46 +30,105 @@ body {
   line-height: 1.5em; }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   width: 95%;
   margin: 0 auto; }
 
 .header {
-  padding: 50px auto;
-  background-image: url(/app/images/mountain.jpg);
-  min-height: 900px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  color: #fff; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0; }
   .header__top,
   .header .menu__items {
     justify-content: space-between; }
   .header a {
     padding: 20px;
     text-transform: capitalize; }
-  .header__tittle {
+
+.tittle {
+  background-image: url(/app/images/bgpurple.jpg);
+  padding: 50px;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  background-attachment: fixed; }
+  .tittle .container {
     flex-direction: column;
-    margin: 300px 230px; }
-    .header__tittle .container {
-      text-align: center; }
-    .header__tittle h2, .header__tittle p {
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
+  .tittle h2 {
+    padding-bottom: 30px; }
+  .tittle img {
+    width: 504px; }
+
+.content {
+  background-color: #FFF;
+  font-size: 17px; }
+  .content .container {
+    margin-top: 400px; }
+  .content__decription {
+    display: flex;
+    flex-direction: row; }
+  .content__items {
+    display: flex;
+    flex-direction: row; }
+  .content__item > p {
+    font-family: "Raleway"; }
+  .content .purple {
+    margin-right: 30px; }
+  .content .blue {
+    margin-right: 30px; }
+  .content h2 {
+    color: #000000;
+    padding: 15px 0px;
+    border-top: solid 4px; }
+
+.firstscreen {
+  padding: 50px;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  background-image: url(/app/images/mountain.jpg); }
+  .firstscreen .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .firstscreen__tittle {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
+    .firstscreen__tittle h2, .firstscreen__tittle p {
       padding-bottom: 30px; }
-    .header__tittle .tittle__items {
+    .firstscreen__tittle .firstscreen__items {
       display: flex;
       justify-content: center; }
-    .header__tittle li {
+    .firstscreen__tittle li {
       width: 180px; }
-    .header__tittle .a {
+    .firstscreen__tittle .a {
       display: block; }
-    .header__tittle .item-white {
+    .firstscreen__tittle .item-white {
       background-color: #fff;
       margin-right: 30px;
       border-radius: 4px;
-      text-transform: uppercase;
+      text-transform: uppercase; }
+    .firstscreen__tittle .item-white > a {
       color: #929496; }
-    .header__tittle .item-blue {
+    .firstscreen__tittle .item-blue {
       background-color: #70CBCE;
       border-radius: 4px;
       text-transform: uppercase; }
+  .firstscreen img {
+    margin: 30px auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.content {
+    background-color: #FFF;
+    font-size: 17px;
+    .container{
+        margin-top: 400px;
+    }
+    &__decription{
+        display: flex;
+    flex-direction: row;     
+    }
+
+    &__items{
+        display: flex;
+    flex-direction: row;  
+    
+    }
+
+    &__item>p{
+        font-family: "Raleway";
+    }
+
+    .purple{
+ margin-right: 30px;
+    }
+
+    .blue{
+margin-right: 30px;
+    }
+    
+    .orange{
+    
+    }
+
+h2 {
+    color:$black_color;
+    padding: 15px 0px;
+    @include border;
+    
+}
+}
