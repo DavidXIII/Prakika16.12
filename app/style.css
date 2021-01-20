@@ -165,11 +165,14 @@ body {
     text-transform: capitalize; }
   .mail__input1 {
     color: #929496;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-size: 21px; }
   .mail__input2 {
     background-color: #70CBCE;
     padding: 20px;
-    color: #fff; }
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase !important; }
 
 .footer .container {
   justify-content: space-between;
