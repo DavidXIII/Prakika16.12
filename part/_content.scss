@@ -14,30 +14,33 @@
     &__items {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         margin-bottom: 200px;
     }
 
-    &__items>li {
-        @include border;
-    }
 
-    &__item>p {
-        font-family: "Raleway";
-    }
 
-    .purple {
-        margin-right: 30px;
-        border-color: #6D3F96;
 
-    }
 
-    .blue {
-        margin-right: 30px;
-        border-color: #70CBCE;
-    }
+    &__item {
+        width: 32%;
 
-    .orange {
-        border-color:#FDC05D;
+        &--purple {
+            border-top: solid 4px #6D3F96;
+
+        }
+
+        &--blue {
+            border-top: solid 4px #70CBCE;
+        }
+
+        &--orange {
+            border-top: 4px solid #FDC05D;
+        }
+
+        p {
+            font-family: "Raleway", sans-serif;
+        }
     }
 
     h2 {

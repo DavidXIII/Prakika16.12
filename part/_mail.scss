@@ -11,21 +11,34 @@
         margin: 200px auto;
     }
 
-    img,
+    .mail_pic{
+        font-size:30px;
+        margin-bottom: 30px;
+    }
+
+    i{
+        display: block;
+        border-radius: 100%;
+        border: 3px solid;
+        padding: 22px;
+        color:$blue_color;
+    }
     p {
         margin-bottom: 50px;
     }
 
-    img::before {
-        border-radius: 100%;
-        border: 1px solid $blue_color;
-    }
+    
     h2,
 &__input1 {
     margin-bottom: 30px;
     color:$black_color;
     width: 380px;
     
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{

@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="header">
         <div class="container">
-        <div class="header__top">
-            <div class="header__logo">
-                <img src="/app/images/logo.svg" alt="">
-            </div>
-            <div class="header__menu">
-                <ul class="menu__items">
-                    <li class="menu__item"> <a href="#">pricing</a></li>
-                    <li class="menu__item"> <a href="#">sign in</a></li>
-                </ul>
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="/app/images/logo.svg" alt="">
+                </div>
+                <div class="header__menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"> <a href="#">pricing</a></li>
+                        <li class="menu__item"> <a href="#">sign in</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- End header -->
     <!-- first screen -->
@@ -55,18 +57,18 @@
         <div class="container">
             <div class="content__description">
                 <ul class="content__items">
-                    <li class="content__item purple ">
+                    <li class="content__item content__item--purple ">
                         <h2>Lorem, ipsum dolor.</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dicta inventore
                             quas enim!</p>
                     </li>
-                    <li class="content__item  blue">
-                        <h2 >Lorem, ipsum dolor.</h2>
+                    <li class="content__item  content__item--blue">
+                        <h2>Lorem, ipsum dolor.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat magni voluptatum
                             sed recusandae!</p>
                     </li>
-                    <li class="content__item orange">
-                        <h2 >Lorem, ipsum dolor.</h2>
+                    <li class="content__item content__item--orange">
+                        <h2>Lorem, ipsum dolor.</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo aliquid soluta ab
                             nobis?</p>
                     </li>
@@ -77,32 +79,35 @@
     <div class="price">
         <div class="container">
             <div class="price__text">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-            <div class="price__container">
-                <ul class="price__block left">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="price__items">
+                <ul class="price__item">
                     <li class="black">Personal</li>
-                    <li class="grey">$5/m</li>
-                    <li class="text">2 row section for you package information. You can include all details or icons</li>
+                    <li class="grey"><span>$5/</span>m</li>
+                    <li class="text">2 row section for you package information. You can include all details or icons
+                    </li>
                     <li class="black-color">Up To 25 Projects</li>
                     <li class="black-color">10GB Storage</li>
                     <li class="black-color">Other info</li>
                     <li class="blue"> <a href="#">GET Started</a></li>
                 </ul>
-                <ul class="price__block center">
+                <ul class="price__item">
                     <li class="black">Personal</li>
-                    <li class="grey">$5/m</li>
-                    <li class="text">2 row section for you package information. You can include all details or icons</li>
+                    <li class="grey"><span>$5/</span>m</li>
+                    <li class="text">2 row section for you package information. You can include all details or icons
+                    </li>
                     <li class="black-color">Up To 25 Projects</li>
                     <li class="black-color">10GB Storage</li>
                     <li class="black-color">Other info</li>
                     <li class="blue"> <a href="#">GET Started</a></li>
                 </ul>
-                <ul class="price__block right">
+                <ul class="price__item">
                     <li class="black">Personal</li>
-                    <li class="grey">$5/m</li>
-                    <li class="text">2 row section for you package information. You can include all details or icons</li>
+                    <li class="grey"><span>$5/</span>m</li>
+                    <li class="text">2 row section for you package information. You can include all details or icons
+                    </li>
                     <li class="black-color">Up To 25 Projects</li>
                     <li class="black-color">10GB Storage</li>
                     <li class="black-color">Other info</li>
@@ -113,22 +118,22 @@
     </div>
     <div class="mail">
         <div class="container">
-            <img src="/app/images/Vector (1).svg" alt="">
-            
+            <span class="mail_pic"><i class="far fa-envelope"></i></span>
             <h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus impedit sint deserunt voluptate.
             </p>
-            <input  class="mail__input1" type="email" placeholder="enter email">
-            <input class="mail__input2" type="submit" value="request invite">
+            <form action=""><input class="mail__input1" type="email" placeholder="enter email">
+                <input class="mail__input2" type="submit" value="request invite">
+            </form>
         </div>
     </div>
     <div class="footer">
         <div class="container">
-            <p> &copy; 2020  - All right reserved  </p>
+            <p> &copy; 2020 - All right reserved </p>
             <div class="footer__icons">
-                <a href="#"><img  class="twi" src="/app/images/twitter-square-brands.svg" alt=""></a>
-                <a href="#"></a><img  class="face"src="/app/images/facebook-square-brands.svg" alt=""></a>
-                <a href="#"></a><img  src="/app/images/instagram-square-brands.svg" alt=""></a>
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fab fa-instagram"></i></a></span>
             </div>
         </div>
     </div>

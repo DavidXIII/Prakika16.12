@@ -7,14 +7,31 @@
     }
     &__icons{
         @extend %flexible;
+        justify-content: space-between;
+        width: 10%;
+    
     }
+    i{
+        display: block;
+       text-align: center;
+       padding: 7px;
+    }
+    a{
+        color:$grey_color;
+        font-size: 17px;
+    }
+    span{
+        border: 1px solid $grey_color;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    
 
-    img{
-        width: 23px;
-        height: 23px;
-    }
 
-    .twi,.face{
-        margin-right: 10px;
-    }
+    
+
+   
+       
 }
