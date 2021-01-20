@@ -1,40 +1,47 @@
 .content {
     background-color: #FFF;
     font-size: 17px;
-    .container{
-        margin-top: 400px;
-    }
-    &__decription{
-        display: flex;
-    flex-direction: row;     
+
+    .container {
+        margin-top: 500px;
     }
 
-    &__items{
+    &__decription {
         display: flex;
-    flex-direction: row;  
-    
+        flex-direction: row;
     }
 
-    &__item>p{
+    &__items {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+
+    &__items>li {
+        @include border;
+    }
+
+    &__item>p {
         font-family: "Raleway";
     }
 
-    .purple{
- margin-right: 30px;
+    .purple {
+        margin-right: 30px;
+        border-color: #6D3F96;
+
     }
 
-    .blue{
-margin-right: 30px;
-    }
-    
-    .orange{
-    
+    .blue {
+        margin-right: 30px;
+        border-color: #70CBCE;
     }
 
-h2 {
-    color:$black_color;
-    padding: 15px 0px;
-    @include border;
-    
-}
+    .orange {
+        border-color:#FDC05D;
+    }
+
+    h2 {
+        color: $black_color;
+        padding: 15px 0px;
+    }
 }

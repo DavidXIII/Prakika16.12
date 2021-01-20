@@ -1,0 +1,50 @@
+.mail {
+
+    background-color: #F2F2F2;
+    @extend %section;
+
+    .container {
+        @extend %flexible;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 200px auto;
+    }
+
+    img,
+    p {
+        margin-bottom: 50px;
+    }
+
+    img::before {
+        border-radius: 100%;
+        border: 1px solid $blue_color;
+    }
+    h2,
+&__input1 {
+    margin-bottom: 30px;
+    color:$black_color;
+    width: 380px;
+    
+}
+
+input{
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    text-transform: capitalize;
+
+}
+&__input1{
+    color: $grey_color;
+    padding-left: 15px;
+  
+}
+&__input2{
+    background-color: $blue_color;
+    padding: 20px;
+    color:$white_color;
+}
+}
+
+

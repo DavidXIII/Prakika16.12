@@ -1,0 +1,20 @@
+.footer{
+    .container{
+        @extend %flexible;
+        justify-content: space-between;
+        height: 200px;
+        margin: 120px auto;
+    }
+    &__icons{
+        @extend %flexible;
+    }
+
+    img{
+        width: 23px;
+        height: 23px;
+    }
+
+    .twi,.face{
+        margin-right: 10px;
+    }
+}
