@@ -4,14 +4,18 @@
     left:0;
     right: 0;
     padding:20px 0;
-    
+
+    @include phone{
+        height: 900px;
+    }
     .container{
-    
+        
     }
     &__top,
     .menu__items {
         @extend %flexible;
         justify-content: space-between;
+        
     }
 
     a {

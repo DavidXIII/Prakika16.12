@@ -2,55 +2,77 @@
     @extend %section;
     @include bg;
     background-image: url(/app/images/mountain.jpg);
-    
 
-
+    @include phone{
+        padding-top: 250px;
+       height: 900px;
+       img{
+        display: none;
+    }
+    }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
 
-   
+
+    ul{
+        @include phone{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__tittle {
-        width:60%;
+        width: 60%;
         margin: 0 auto;
         text-align: center;
 
-        h2, p {
+        h2,
+        p {
             padding-bottom: 30px;
         }
 
-        .firstscreen__items{
+        .firstscreen__items {
             display: flex;
             justify-content: center;
-            
+
         }
-        li{
+
+        li {
+            @include phone{
+                margin-bottom: 20px;
+            }
             width: 180px;
         }
-        .a{
+        
+
+        .a {
             display: block;
         }
-
-        .item-white{
-            background-color:$white_color;
-            margin-right: 30px;
-            @include item;
-        }
-        .item-white>a{
-            color:$grey_color;
-        }
-
-        .item-blue{
-            background-color: $blue_color;
-            @include item;
-        }
     }
-    img{
-        margin: 30px auto;
+
+    .item-white {
+        background-color: $white_color;
+        margin-right: 30px;
+        @include item;
     }
+
+    .item-white>a {
+        color: $grey_color;
+    }
+
+    .item-blue {
+        background-color: $blue_color;
+        @include item;
+    }
+
+
+img {
+    margin: 30px auto;
+}
 }

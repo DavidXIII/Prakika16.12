@@ -2,8 +2,15 @@
     background-color: #FFF;
     font-size: 17px;
 
+    @include phone {
+        min-height: 100%;
+    }
+
     .container {
         margin-top: 500px;
+        @include phone{
+            margin-top: 80px;
+        }
     }
 
     &__decription {
@@ -16,6 +23,12 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 200px;
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+        }
     }
 
 
@@ -24,6 +37,10 @@
 
     &__item {
         width: 32%;
+        @include phone{
+            width: 90%;
+            padding-bottom: 60px;
+        }
 
         &--purple {
             border-top: solid 4px #6D3F96;
@@ -46,5 +63,6 @@
     h2 {
         color: $black_color;
         padding: 15px 0px;
+
     }
 }

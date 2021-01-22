@@ -36,3 +36,10 @@ $font_h2: "Montserrat", sans-serif;
 @mixin border{
     border-top: solid 4px;
 }
+@mixin phone{
+    @media screen and (max-width:520px)
+    {
+        @content;
+    }
+        
+    }

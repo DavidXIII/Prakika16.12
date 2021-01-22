@@ -3,63 +3,72 @@
     background-color: #F2F2F2;
     @extend %section;
 
+    @include phone {
+        min-height: 100%
+    }
+
     .container {
         @extend %flexible;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin: 200px auto;
+        @include phone{
+            margin: 100px auto;
+        }
     }
 
-    .mail_pic{
-        font-size:30px;
+    .mail_pic {
+        font-size: 30px;
         margin-bottom: 30px;
     }
 
-    i{
+    i {
         display: block;
         border-radius: 100%;
         border: 3px solid;
         padding: 22px;
-        color:$blue_color;
+        color: $blue_color;
     }
+
     p {
         margin-bottom: 50px;
     }
 
-    
+
     h2,
-&__input1 {
-    margin-bottom: 30px;
-    color:$black_color;
-    width: 380px;
-    
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__input1 {
+        margin-bottom: 30px;
+        color: $black_color;
+        width: 380px;
 
-input{
-    height: 50px;
-    border: none;
-    border-radius: 3px;
-    text-transform: capitalize;
+    }
 
-}
-&__input1{
-    color: $grey_color;
-    padding-left: 15px;
-    font-size: 21px;
-}
-&__input2{
-    background-color: $blue_color;
-    padding: 20px;
-    color:$white_color;
-    font-size: 14px;
-    text-transform:uppercase !important;
-}
-}
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    input {
+        height: 50px;
+        border: none;
+        border-radius: 3px;
+        text-transform: capitalize;
 
+    }
+
+    &__input1 {
+        color: $grey_color;
+        padding-left: 15px;
+        font-size: 21px;
+    }
+
+    &__input2 {
+        background-color: $blue_color;
+        padding: 20px;
+        color: $white_color;
+        font-size: 14px;
+        text-transform: uppercase !important;
+    }
+}

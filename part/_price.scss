@@ -22,6 +22,12 @@
         text-align: center;
         margin-bottom: 200px;
         justify-content: space-between;
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
 
     &__item {
@@ -30,17 +36,24 @@
         background-color: $white_color;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
+
+        @include phone {
+            width: 80%;
+           margin-bottom: 30px;
+        }
     }
 
-    &__item:hover{
+    &__item:hover {
         transform: scale(1.15);
-        box-shadow: 0 0 10px rgba( 0, 0, 0, 0.7);
-        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
     }
-li{
-    min-height: 50px;
-    line-height: 50px;
-}
+
+    li {
+        min-height: 50px;
+        line-height: 50px;
+    }
+
     .black {
         background-color: $black_color;
         color: $white_color;
@@ -49,50 +62,52 @@ li{
 
     .grey {
         background-color: $dark_color;
-        color:$grey_color;
+        color: $grey_color;
         font-size: 16px;
 
-        span{
+        span {
             font-size: 24px;
             color: $white_color;
             font-weight: bold;
         }
     }
 
-    .text{
-        color:$grey_color;
+    .text {
+        color: $grey_color;
         font-size: 17px;
         line-height: 1.3em;
         padding: 20px;
-        border-bottom: 1px dashed #a09b9b7c; 
+        border-bottom: 1px dashed #a09b9b7c;
     }
 
-    .black-color{
-        border-bottom: 1px dashed #a09b9b7c; 
+    .black-color {
+        border-bottom: 1px dashed #a09b9b7c;
         font-weight: bold;
         font-size: 17px;
     }
 
-    .black-color{
-        font-family: "Raleway"!important;
+    .black-color {
+        font-family: "Raleway" !important;
     }
 
-    .blue{
+    .blue {
         background-color: rgba(196, 196, 196, 0.301);
 
-        a{ 
-            color:$blue_color;
+        a {
+            color: $blue_color;
             display: block;
             height: 50px;
-    }
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 50px;
-    &:hover{
-        background-color: rgba(196, 196, 196, 0.5);
-    }
+        }
+
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 50px;
+
+        &:hover {
+            background-color: rgba(196, 196, 196, 0.5);
+        }
     }
 
-    
+
 }
